@@ -223,16 +223,10 @@ else if(ua.indexOf('Gear') != -1) {//Gear
 else if(ua.indexOf('MoneyThings') != -1) {//MoneyThings
 	obj['subscriber']['entitlements']['Premium']=ddgksf2021;
 }
-else if(ua.indexOf('Anybox') != -1) {//Anybox
-	obj['subscriber']['entitlements']['pro']=ddgksf2021;	
-}
 else if(ua.indexOf('Fileball') != -1) {//Filebox
 	obj['subscriber']['entitlements']['filebox_pro']=ddgksf2021;
 }
 else if(ua.indexOf('Noto') != -1) {//noto
-  obj['subscriber']['entitlements']['pro']=ddgksf2021;
-}
-else{
   obj['subscriber']['entitlements']['pro']=ddgksf2021;
 }
 $done({body: JSON.stringify(obj)});
