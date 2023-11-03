@@ -144,6 +144,9 @@ else if(ua.indexOf('widget_art') != -1) {//widget_art
 else if(ua.indexOf('OneBox') != -1) {//pandora
   obj['subscriber']['entitlements']['all']=ddgksf2021;
 }
+else if(ua.indexOf('Spark') != -1) {//spark
+	obj['subscriber']['entitlements']['premium']=ddgksf2021;	
+}
 else if(ua.indexOf('Pillow') != -1) {//pillow
 	obj['subscriber']['entitlements']['premium']=ddgksf2021;
 }
@@ -152,6 +155,18 @@ else if(ua.indexOf('1Blocker') != -1) {//1Blocker
 }
 else if(ua.indexOf('VSCO') != -1) {//VSCO
 	obj['subscriber']['entitlements']['membership']=ddgksf2021;
+}
+else if(ua.indexOf('UTC') != -1) {//花样文字
+	obj['subscriber']['entitlements']['Entitlement.Pro']=ddgksf2021;	
+}
+else if(ua.indexOf('%E8%AC%8E%E5%BA%95%E9%BB%91%E8%86%A0') != -1) {//谜底黑胶
+	obj['subscriber']['entitlements']['Entitlement.Pro']=ddgksf2021;	
+}
+else if(ua.indexOf('%E8%AC%8E%E5%BA%95%E6%99%82%E9%90%98') != -1) {//谜底时钟
+	obj['subscriber']['entitlements']['Entitlement.Pro']=ddgksf2021;
+}
+else if(ua.indexOf('OffScreen') != -1) {//OffScreen
+	obj['subscriber']['entitlements']['Entitlement.Pro']=ddgksf2021;	
 }
 else if(ua.indexOf('ScannerPro') != -1) {//Scanner Pro
 	obj['subscriber']['entitlements']['plus']=ddgksf2021;
@@ -223,10 +238,16 @@ else if(ua.indexOf('Gear') != -1) {//Gear
 else if(ua.indexOf('MoneyThings') != -1) {//MoneyThings
 	obj['subscriber']['entitlements']['Premium']=ddgksf2021;
 }
+else if(ua.indexOf('Anybox') != -1) {//Anybox
+	 $done({});	
+}
 else if(ua.indexOf('Fileball') != -1) {//Filebox
 	obj['subscriber']['entitlements']['filebox_pro']=ddgksf2021;
 }
 else if(ua.indexOf('Noto') != -1) {//noto
+  obj['subscriber']['entitlements']['pro']=ddgksf2021;
+}
+else{
   obj['subscriber']['entitlements']['pro']=ddgksf2021;
 }
 $done({body: JSON.stringify(obj)});
